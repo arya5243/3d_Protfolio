@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(),tailwindcss()],
-  base:'/3d_Protfolio',
+  base:'/3d_Protfolio/',
 })
