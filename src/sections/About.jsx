@@ -17,7 +17,7 @@ const About = () => {
         <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
             <div className="col-span-1 xl:row-span-3">
                 <div className="grid-container">
-                  <img src="3d_Protfolio/assets/grid1.png" alt="" className="w-full sm:h-[276px] h-fit object-contain"/>
+                  <img src="/3d_Protfolio/assets/grid1.png" alt="" className="w-full sm:h-[276px] h-fit object-contain"/>
                   <div>
                     <p className="grid-headtext">Hi, I am Aryan</p>
                     <p className="grid-subtext">With 1 years of Experience, I have honed my skills in frontend and backend development with a focus on 3d websites.</p>
@@ -26,7 +26,7 @@ const About = () => {
             </div>
             <div className="col-span-1 xl:row-span-3">
               <div className="grid-container">
-                <img src="3d_Protfolio/assets/grid2.png" alt="" className="w-full sm:w-[300px] h-fit object-contain m-auto rounded-2xl"/>
+                <img src="/3d_Protfolio/assets/grid2.png" alt="" className="w-full sm:w-[300px] h-fit object-contain m-auto rounded-2xl"/>
                 <div>
                   <p className="grid-headtext">Tech Stack</p>
                   <p className="grid-subtext">I specalize in Javascript with a focus on React and Next.js ecosystem.</p>
@@ -54,7 +54,7 @@ const About = () => {
             </div>
               <div className="xl:col-span-2 xl:row-span-3">
                   <div className="grid-container">
-                      <img src="3d_Protfolio/assets/grid3.png" alt="grid3" className="w-full sm:h-[276px] h-fit object-contain" />
+                      <img src="/3d_Protfolio/assets/grid3.png" alt="grid3" className="w-full sm:h-[276px] h-fit object-contain" />
                       <div>
                         <p className="grid-headtext">My passion for coding</p>
                         <p className="grid-subtext">I love solving problems and building things through code. Coding is'nt just my proffesion -it is my passion</p>
@@ -64,11 +64,11 @@ const About = () => {
               </div>
               <div className="xl:col-span-1 xl:row-span-2">
                 <div className="grid-container">
-                  <img src="3d_Protfolio/assets/grid4.png" alt="grid4" className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top" />
+                  <img src="/3d_Protfolio/assets/grid4.png" alt="grid4" className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top" />
                   <div className="space-y-2">
                     <p className="grid-subtext text-center">Contact me </p>
                     <div className="copy-container" onClick={handleCopy}>
-                        <img src={Copy ? "3d_Protfolio/assets/tick.svg" : "3d_Protfolio/assets/copy.svg"} alt="" />
+                        <img src={Copy ? "/3d_Protfolio/assets/tick.svg" : "/3d_Protfolio/assets/copy.svg"} alt="" />
                         <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white " > aj375067@gmail.com</p>
                     </div>
                   </div>
