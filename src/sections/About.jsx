@@ -17,7 +17,7 @@ const About = () => {
         <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
             <div className="col-span-1 xl:row-span-3">
                 <div className="grid-container">
-                  <img src="3d_Protfolio//assets/grid1.png" alt="" className="w-full sm:h-[276px] h-fit object-contain"/>
+                  <img src="3d_Protfolio/assets/grid1.png" alt="" className="w-full sm:h-[276px] h-fit object-contain"/>
                   <div>
                     <p className="grid-headtext">Hi, I am Aryan</p>
                     <p className="grid-subtext">With 1 years of Experience, I have honed my skills in frontend and backend development with a focus on 3d websites.</p>
@@ -54,7 +54,7 @@ const About = () => {
             </div>
               <div className="xl:col-span-2 xl:row-span-3">
                   <div className="grid-container">
-                      <img src="3d_Protfolio//assets/grid3.png" alt="grid3" className="w-full sm:h-[276px] h-fit object-contain" />
+                      <img src="3d_Protfolio/assets/grid3.png" alt="grid3" className="w-full sm:h-[276px] h-fit object-contain" />
                       <div>
                         <p className="grid-headtext">My passion for coding</p>
                         <p className="grid-subtext">I love solving problems and building things through code. Coding is'nt just my proffesion -it is my passion</p>
