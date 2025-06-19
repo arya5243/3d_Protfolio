@@ -6,6 +6,7 @@ import Projects from './sections/Projects'
 const App = () => {
   return (
     <main className='max-w-7xl mx-auto [&::-webkit-scrollbar]:w-0'>
+
       <Navbar/>
       <Hero/>
       <About/>
