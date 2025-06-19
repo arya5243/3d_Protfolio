@@ -63,34 +63,34 @@ export const myProjects = [
     subdesc:
       'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
     href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-    texture: '3d_Protfolio//textures/project/project1.mp4',
-    logo: '3d_Protfolio//assets/project-logo1.png',
+    texture: '/3d_Protfolio/textures/project/project1.mp4',
+    logo: '/3d_Protfolio/assets/project-logo1.png',
     logoStyle: {
       backgroundColor: '#2A1816',
       border: '0.2px solid #36201D',
       boxShadow: '0px 0px 60px 0px #AA3C304D',
     },
-    spotlight: '3d_Protfolio//assets/spotlight1.png',
+    spotlight: '/3d_Protfolio/assets/spotlight1.png',
     tags: [
       {
         id: 1,
         name: 'React.js',
-        path: '3d_Protfolio//assets/react.svg',
+        path: '/3d_Protfolio/assets/react.svg',
       },
       {
         id: 2,
         name: 'TailwindCSS',
-        path: '3d_Protfolio//assets/tailwindcss.png',
+        path: '/3d_Protfolio/assets/tailwindcss.png',
       },
       {
         id: 3,
         name: 'TypeScript',
-        path: '3d_Protfolio//assets/typescript.png',
+        path: '/3d_Protfolio/assets/typescript.png',
       },
       {
         id: 4,
         name: 'Framer Motion',
-        path: '3d_Protfolio//assets/framer.png',
+        path: '/3d_Protfolio/assets/framer.png',
       },
     ],
   },

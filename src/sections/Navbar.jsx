@@ -33,7 +33,7 @@ const Navbar = () => {
                hover:text-white focus:outline-none sm:hidden flex' 
               onClick={() => setisOpen((prev) => !prev )}
               aria-label='toggle-menu'>
-                <img src={isOpen ? "3d_Protfolio/assets/close.svg" : "3d_Protfolio/assets/menu.svg"} alt="toggle" 
+                <img src={isOpen ? "/3d_Protfolio/assets/close.svg" : "/3d_Protfolio/assets/menu.svg"} alt="toggle" 
                 className='w-6 h-6'/>
               </button>
               <nav className='sm:flex hidden'>
