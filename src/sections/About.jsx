@@ -1,6 +1,7 @@
-import Globe from "react-globe.gl"
+import React from 'react'
 import Button from '../Components/Button'
 import { useState } from "react"
+const Globe = React.lazy(()=> import("react-globe.gl"))
 
 const About = () => {
   const [Copy,setCopy] = useState(false)
@@ -41,7 +42,7 @@ const About = () => {
                   bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                   labelsData={[{
                     lat:25.9644,lng:85.2722,text:"I am Here",color:"white",size:1000,
-                  }]}/>
+                  }]} />
                 </div>
                 <div >
                   <p className="grid-headtext">I work remotely across all Timezones</p>
