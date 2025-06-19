@@ -1,16 +1,18 @@
+import React from "react"
 import {  PerspectiveCamera, Ring } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
-import { HackerRoom} from "../Components/HackerRoom"
 import { Suspense } from "react"
 import  CanvasLoader from "../Components/CanvasLoader"
 import { useMediaQuery } from "react-responsive"
 import { calculateSizes } from "../Constants"
-import Target from "../Components/Target"
-import ReactLogo from "../Components/ReactLogo"
-import Cube from "../Components/Cube"
-import Rings from "../Components/Rings"
 import HeroCamera from "../Components/HeroCamera"
 import Button from "../Components/Button"
+import { Preload } from '@react-three/drei'
+const Target = React.lazy(() => import("../Components/Target"))
+const Cube = React.lazy(() => import("../Components/Cube"))
+const Rings = React.lazy(() => import("../Components/Rings"))
+const ReactLogo = React.lazy(() => import("../Components/ReactLogo"))
+const HackerRoom = React.lazy(() => import("../Components/HackerRoom"))
 
 const Hero = () => {
     
@@ -28,7 +30,8 @@ const Hero = () => {
 
         <div className="h-full w-full absolute inset-0">
             {/* /*<Leva /> */}
-            <Canvas className="w-full h-full">
+            <Canvas className="w-full h-full"  gl={{ antialias: false}} >
+                <Preload all />
                 <Suspense fallback={<CanvasLoader/>}>
                     <PerspectiveCamera 
                     makeDefault
@@ -38,8 +41,7 @@ const Hero = () => {
                         <HackerRoom 
                         position={sizes.deskPosition}
                         rotation={[0,-Math.PI,0]}
-                        scale={sizes.deskScale}
-                     />
+                        scale={sizes.deskScale}/>
                     </HeroCamera>
                      
                     
