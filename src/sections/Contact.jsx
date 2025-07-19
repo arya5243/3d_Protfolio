@@ -54,7 +54,7 @@ const Contact = () => {
     <section className="c-space my-20" id="contact">
       <h3 className="head-text">Contact Me</h3>
 
-      <div className="relative min-h-screen flex items-center justify-center flex-col  mt-5 h-[130vh]">
+      <div className="relative min-h-screen flex items-center justify-center flex-col  mt-5 ">
           <img src="/3d_Protfolio/assets/terminal.png" alt="" className="absolute inset-0 min-h-screen"/>
           <div className="contact-container">
             <h3 className="head-text">Let's Talk</h3>
