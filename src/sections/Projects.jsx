@@ -1,5 +1,5 @@
 import React, { Suspense, useState } from 'react'
-import { myProjects } from '../Constants'
+import { myProjects } from '../Constants/index.js'
 import { Canvas } from '@react-three/fiber';
 import { Center, OrbitControls } from '@react-three/drei';
 import CanvasLoader from '../Components/CanvasLoader';
@@ -50,15 +50,15 @@ const Projects = () => {
                   </div>
                   <a href={Currentproject.href} className='flex items-center gap-2 text-white-600 cursor-pointer' target='_blank' rel='noreferrer'>
                     <p>Check Live Site </p>
-                    <img src="3d_Protfolio/assets/arrow-up.png" alt="" />
+                    <img src="/3d_Protfolio/assets/arrow-up.png" alt="" />
                   </a>
                 </div>
                 <div className="flex justify-between items-center mt-7">
                   <button className='arrow-btn' onClick={() => handleNav('previous')}>
-                    <img src="3d_Protfolio/assets/left-arrow.png" alt="" className='w-4 h-4'/>
+                    <img src="/3d_Protfolio/assets/left-arrow.png" alt="" className='w-4 h-4'/>
                   </button>
                   <button className='arrow-btn' onClick={() => handleNav('next')}>
-                    <img src="3d_Protfolio/assets/right-arrow.png" alt="" className='w-4 h-4'/>
+                    <img src="/3d_Protfolio/assets/right-arrow.png" alt="" className='w-4 h-4'/>
                   </button>
                 </div>
             </div>
