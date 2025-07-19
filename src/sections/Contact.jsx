@@ -62,7 +62,7 @@ const Contact = () => {
               Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
               life, I’m here to help.
             </p>
-            <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
+            <form ref={formRef} onSubmit={handleSubmit} className="mt-7 flex flex-col space-y-7">
                 <label htmlFor="" className="space-y-3 ">
                   <span className="field-label">Full Name</span>
                   <input type="text" name="name" value={form.name} onChange={handleChange} required className="field-input" placeholder="John xyz"/>
@@ -73,7 +73,7 @@ const Contact = () => {
                 </label>
                 <label htmlFor="" className="space-y-3 ">
                   <span className="field-label">Your Message</span>
-                  <textarea  name="message" value={form.message} onChange={handleChange} required className="field-input" placeholder="Hi We Want to..." rows={5}/>
+                  <textarea  name="message" value={form.message} onChange={handleChange} required className="field-input" placeholder="Hi We Want to..." rows={4}/>
                 </label>
                 <button className={`field-btn cursor-${Loading ? "progress" : "pointer"}`} type="submit" disabled={Loading}>
                   {Loading ? "Sending..." : "Send Message"}
