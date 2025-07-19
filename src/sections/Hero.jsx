@@ -7,12 +7,11 @@ import { useMediaQuery } from "react-responsive"
 import { calculateSizes } from "../Constants"
 import HeroCamera from "../Components/HeroCamera"
 import Button from "../Components/Button"
-import { Preload } from '@react-three/drei'
-const Target = React.lazy(() => import("../Components/Target"))
-const Cube = React.lazy(() => import("../Components/Cube"))
-const Rings = React.lazy(() => import("../Components/Rings"))
-const ReactLogo = React.lazy(() => import("../Components/ReactLogo"))
-const HackerRoom = React.lazy(() => import("../Components/HackerRoom"))
+import Target from "../Components/Target"
+import Cube from "../Components/Cube"
+import Rings from "../Components/Rings"
+import ReactLogo from "../Components/ReactLogo"
+import HackerRoom from "../Components/HackerRoom"
 
 const Hero = () => {
     
@@ -22,7 +21,7 @@ const Hero = () => {
 
     const sizes = calculateSizes(isSmall,isMobile,isTablet);
   return (
-    <section className="min-h-screen  w-full flex flex-col relative" >
+    <section className="min-h-screen  w-full flex flex-col relative" id="home" >
         <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3 ">
             <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans" >Hi, I am Aryan <span className="waving-hand">👋</span></p>
             <p className="hero_tag text-gray_gradient ">Buliding Products & Brands</p>
@@ -30,8 +29,7 @@ const Hero = () => {
 
         <div className="h-full w-full absolute inset-0">
             {/* /*<Leva /> */}
-            <Canvas className="w-full h-full"  gl={{ antialias: false}} >
-                <Preload all />
+            <Canvas className="w-full h-full" >
                 <Suspense fallback={<CanvasLoader/>}>
                     <PerspectiveCamera 
                     makeDefault
