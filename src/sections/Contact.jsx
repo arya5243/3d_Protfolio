@@ -62,7 +62,7 @@ const Contact = () => {
               Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
               life, I’m here to help.
             </p>
-            <form ref={formRef} onSubmit={handleSubmit} className="mt-[5%] flex flex-col space-y-7">
+            <form ref={formRef} onSubmit={handleSubmit} className="mt-[7%] flex flex-col space-y-7">
                 <label htmlFor="" className="space-y-3 ">
                   <span className="field-label">Full Name</span>
                   <input type="text" name="name" value={form.name} onChange={handleChange} required className="field-input" placeholder="John xyz"/>
