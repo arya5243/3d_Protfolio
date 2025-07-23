@@ -1,18 +1,22 @@
 import React, { useState } from 'react'
 import { navLinks } from '../Constants'
+import { useNavigate, useNavigation } from 'react-router-dom'
 
 const Navitems = () =>{
-  
+  const navigate = useNavigate()
   return (
     <ul className='nav-ul'>
     {navLinks.map(({id,href,name}) =>{
       return (
-        <li key={id} 
-        className='nav-li'>
+        <>
+          <li key={id} 
+          onClick={() =>  navigate(href)}
+          className='nav-li'>
            <a href={href} className='nav-li_a'>
               {name}
             </a>
           </li>
+        </>
       )
     })}
   </ul>
